@@ -3,6 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { CommonModule } from '@angular/common';  // Importa CommonModule para usar ngFor
 import { Show } from './interfaces/show.interface';
 import { ShowComponent } from "./components/show-card/show-card.component";
+import { FormEditComponent } from './components/form-edit/form-edit.component'; 
 import { FormControl, FormGroup, FormsModule, NgForm, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NewShowFormComponent } from "./components/new-show-form/new-show-form.component";
 import { FiltrarComponent } from "./filtrar/filtrar.component";
@@ -12,7 +13,7 @@ import { Modal } from 'bootstrap';
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [NgbModalModule, RouterOutlet, CommonModule, ShowComponent, FormsModule, ReactiveFormsModule, NewShowFormComponent, FiltrarComponent],
+    imports: [NgbModalModule, RouterOutlet, CommonModule, ShowComponent, FormEditComponent, FormsModule, ReactiveFormsModule, NewShowFormComponent, FiltrarComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.css'
 })

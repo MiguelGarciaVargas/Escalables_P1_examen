@@ -6,7 +6,7 @@
 
 
     <div class="container d-flex">
-        <app-show-card *ngFor="let show of shows" [show]="show" (deleteCard)="deleteElement($event)"
+        <app-show-card *ngFor="let showi of shows" [show]="showi" (deleteCard)="deleteElement($event)"
             (editCard)="openEditWindow($event)"></app-show-card>
     </div>
 
@@ -18,8 +18,10 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <app-new-show-form (createElement)="editCard($event)" [show]="editingShow"></app-new-show-form>
-                    <p>Agregue con el boton de agregar y click cerrar para cerrar :)</p>
+                    <!-- <app-new-show-form (createElement)="editCard($event)" [show]="editingShow"></app-new-show-form>
+                    <p>Agregue con el boton de agregar y click cerrar para cerrar :)</p> -->
+                    <app-form-edit [show]="editingShow" (createElement)="editCard($event)"></app-form-edit>
+                    <p>Agregue con el boton de agregar y cerrar aunque salga alerta si funciona GG</p> 
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

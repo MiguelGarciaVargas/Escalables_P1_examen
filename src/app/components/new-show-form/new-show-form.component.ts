@@ -29,8 +29,6 @@ export class NewShowFormComponent implements OnInit{
   public isFormSubmitted = false;
 
   constructor() {
-
-
     this.form = new FormGroup({
       name: new FormControl('', Validators.required),
       image: new FormControl('', Validators.required),
