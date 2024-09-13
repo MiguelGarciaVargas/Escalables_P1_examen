@@ -1,0 +1,23 @@
+<!-- <button class="btn btn-primary" (click)="sortByName()">Ordenar por Nombre</button>
+<button class="btn btn-primary" (click)="sortByDate()">Ordenar por Año de Lanzamiento</button>
+<button class="btn btn-primary" (click)="sortByEpisodes()">Ordenar por Numero de Episodios</button>
+<button class="btn btn-primary" (click)="onAscending()">
+    {{ isAscendingBool ? 'Ascendente' : 'Descendente' }}
+</button> -->
+
+
+<div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        Ordenar
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li><a class="dropdown-item" (click)="sortByName()">Ordenar por Nombre</a></li>
+        <li><a class="dropdown-item" (click)="sortByDate()">Ordenar por Año de Lanzamiento</a></li>
+        <li><a class="dropdown-item" (click)="sortByEpisodes()">Ordenar por Número de Episodios</a></li>
+    </ul>
+</div>
+
+<button class="btn btn-primary" (click)="onAscending()">
+    {{ isAscendingBool ? 'Ascendente' : 'Descendente' }}
+</button>

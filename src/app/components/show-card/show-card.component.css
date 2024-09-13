@@ -1,0 +1,13 @@
+.card{
+    width: 250px;
+    height: 400px;
+    margin: 5px;
+}
+
+img{
+    height: 50%;
+}
+
+.selected{
+    background-color: aliceblue;
+}
